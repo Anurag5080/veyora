@@ -24,7 +24,7 @@ export default function SearchBar() {
 
 function Field({ icon, label, value }) {
   return (
-    <div className="flex-1 flex items-center gap-3 px-6 py-4 min-w-[180px]">
+    <div className="flex-1 flex items-center gap-3 px-6 py-4 min-w-45">
       <span className="text-veyoraGold">{icon}</span>
       <div>
         <p className="text-[11px] text-gray-400">{label}</p>

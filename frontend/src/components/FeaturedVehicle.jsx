@@ -5,7 +5,7 @@ export default function FeaturedVehicle() {
         <img
           src="https://images.unsplash.com/photo-1622200294737-232cba9b7a17?q=80&w=1000"
           alt="Mercedes-Maybach S-Class"
-          className="w-full h-72 md:h-[420px] object-cover"
+          className="w-full h-72 md:h-105 object-cover"
         />
         <div className="p-8 md:p-14">
           <p className="text-veyoraGold text-xs tracking-[0.2em] mb-3">THE ICON</p>

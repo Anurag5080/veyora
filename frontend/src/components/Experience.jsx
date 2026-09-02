@@ -20,7 +20,7 @@ export default function Experience() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-10 relative rounded-xl overflow-hidden max-w-sm">
+      <div className="max-w-sm mx-auto mt-10 relative rounded-xl overflow-hidden">
         <img
           src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=800"
           alt="Car interior"
