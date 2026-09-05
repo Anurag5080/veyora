@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const cities = ["Delhi NCR", "Mumbai", "Bengaluru", "Hyderabad", "Chennai", "Pune", "Jaipur", "Goa"];
 
 export default function Locations() {
@@ -13,9 +15,9 @@ export default function Locations() {
             {cities.map((c) => <span key={c}>📍 {c}</span>)}
           </div>
 
-          <button className="bg-veyoraGold text-veyoraDark font-medium px-6 py-3 rounded hover:brightness-95">
+          <Link to="/locations" className="bg-veyoraGold text-veyoraDark font-medium px-6 py-3 rounded hover:brightness-95">
             Explore All Locations →
-          </button>
+          </Link>
         </div>
 
         <div className="bg-gray-100 rounded-xl h-64 md:h-80 flex items-center justify-center text-veyoraGreen font-serif text-lg">

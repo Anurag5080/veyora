@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const categories = ["All", "Sedans", "SUVs", "Ultra Luxury", "Performance"];
 
@@ -23,7 +24,7 @@ export default function Fleet() {
           From understated elegance to unmistakable presence, choose the automobile that
           matches the moment.
           <div className="mt-2">
-            <a href="#" className="text-veyoraGold underline underline-offset-4 text-sm">View All Vehicles →</a>
+            <Link to="/fleet" className="text-veyoraGold underline underline-offset-4 text-sm">View All Vehicles →</Link>
           </div>
         </div>
       </div>
@@ -49,7 +50,7 @@ export default function Fleet() {
             <div className="p-4">
               <p className="font-serif text-sm">{car.name}</p>
               <p className="text-xs text-gray-400 mb-2">{car.type}</p>
-              <a href="#" className="text-veyoraGold text-xs">Explore →</a>
+              <Link to="/fleet" className="text-veyoraGold text-xs">Explore →</Link>
             </div>
           </div>
         ))}

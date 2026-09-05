@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const services = [
   { title: "Airport Transfers", desc: "Arrive without waiting." },
   { title: "Executive Mobility", desc: "Move at the pace of business." },
@@ -18,7 +20,7 @@ export default function Services() {
         <div className="text-sm text-gray-500 max-w-xs">
           Tailored mobility solutions for every occasion.
           <div className="mt-2">
-            <a href="#" className="text-veyoraGreen underline underline-offset-4">Explore All Services →</a>
+            <Link to="/services" className="text-veyoraGreen underline underline-offset-4">Explore All Services →</Link>
           </div>
         </div>
       </div>

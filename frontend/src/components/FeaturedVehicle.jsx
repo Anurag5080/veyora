@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function FeaturedVehicle() {
   return (
     <section className="bg-veyoraCream">
@@ -5,7 +7,7 @@ export default function FeaturedVehicle() {
         <img
           src="https://images.unsplash.com/photo-1622200294737-232cba9b7a17?q=80&w=1000"
           alt="Mercedes-Maybach S-Class"
-          className="w-full h-72 md:h-105 object-cover"
+          className="w-full h-72 md:h-[420px] object-cover"
         />
         <div className="p-8 md:p-14">
           <p className="text-veyoraGold text-xs tracking-[0.2em] mb-3">THE ICON</p>
@@ -23,9 +25,9 @@ export default function FeaturedVehicle() {
             <span className="text-gray-500 text-sm"> / day</span>
           </p>
 
-          <button className="mt-6 bg-veyoraGold text-veyoraDark font-medium px-6 py-3 rounded hover:brightness-95">
+          <Link to="/book-ride" className="mt-6 inline-block bg-veyoraGold text-veyoraDark font-medium px-6 py-3 rounded hover:brightness-95">
             Reserve This Vehicle →
-          </button>
+          </Link>
         </div>
       </div>
     </section>
