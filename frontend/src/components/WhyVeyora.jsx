@@ -1,3 +1,5 @@
+import AnimatedCounter from "./AnimatedCounter";
+
 const pillars = [
   { title: "Exceptional Fleet", desc: "Only the finest vehicles." },
   { title: "Professional Chauffeurs", desc: "Trained, verified and discreet." },
@@ -6,10 +8,9 @@ const pillars = [
 ];
 
 const stats = [
-  { value: "500+", label: "Premium Journeys" },
-  { value: "50+", label: "Luxury Vehicles" },
-  { value: "10+", label: "Cities" },
-  { value: "24/7", label: "Concierge Support" },
+  { value: 500, suffix: "+", label: "Premium Journeys" },
+  { value: 50, suffix: "+", label: "Luxury Vehicles" },
+  { value: 10, suffix: "+", label: "Cities" },
 ];
 
 export default function WhyVeyora() {
@@ -37,10 +38,14 @@ export default function WhyVeyora() {
           <p className="col-span-2 md:col-span-4 text-gray-600 mb-2">Trusted By Those Who Value The Difference.</p>
           {stats.map((s) => (
             <div key={s.label}>
-              <p className="font-serif text-3xl text-veyoraGreen">{s.value}</p>
+              <p className="font-serif text-3xl text-veyoraGreen"><AnimatedCounter value={s.value} />{s.suffix}</p>
               <p className="text-xs text-gray-500 mt-1">{s.label}</p>
             </div>
           ))}
+          <div>
+            <p className="font-serif text-3xl text-veyoraGreen">24/7</p>
+            <p className="text-xs text-gray-500 mt-1">Concierge Support</p>
+          </div>
         </div>
       </section>
     </>

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Experience() {
   return (
     <section className="bg-veyoraCream py-20 px-6">
@@ -14,9 +16,9 @@ export default function Experience() {
             another. It's about arriving effortlessly, travelling comfortably, and knowing
             every detail has already been taken care of.
           </p>
-          <button className="mt-6 bg-veyoraGold text-veyoraDark font-medium px-6 py-3 rounded hover:brightness-95">
+          <Link to="/about" className="mt-6 inline-block bg-veyoraGold text-veyoraDark font-medium px-6 py-3 rounded hover:brightness-95">
             Our Story →
-          </button>
+          </Link>
         </div>
       </div>
 

@@ -1,4 +1,4 @@
-const cities = ["Delhi NCR", "Mumbai", "Bengaluru", "Hyderabad", "Chennai", "Pune", "Jaipur", "Goa"];
+const cities = ["Delhi NCR", "Mumbai", "Bengaluru", "Hyderabad", "Chennai", "Pune", "Jaipur", "Goa", "Kolkata", "Ahmedabad", "Chandigarh", "Lucknow", "Surat", "Kochi", "Indore"];
 
 export default function LocationsPage() {
   return (
@@ -10,9 +10,7 @@ export default function LocationsPage() {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-4">
           {cities.map((c) => (
-            <div key={c} className="bg-white rounded-lg p-5 text-veyoraDark font-medium text-sm shadow-sm">
-              📍 {c}
-            </div>
+            <div key={c} className="bg-white rounded-lg p-5 text-veyoraDark font-medium text-sm shadow-sm">📍 {c}</div>
           ))}
         </div>
       </div>

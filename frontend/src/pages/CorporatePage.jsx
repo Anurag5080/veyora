@@ -19,7 +19,7 @@ export default function CorporatePage() {
           ))}
         </div>
 
-        <Link to="/book-ride" className="bg-veyoraGold text-veyoraDark font-medium px-6 py-3 rounded hover:brightness-95">
+        <Link to="/about" className="bg-veyoraGold text-veyoraDark font-medium px-6 py-3 rounded hover:brightness-95">
           Talk To Our Corporate Team →
         </Link>
       </div>
