@@ -8,8 +8,8 @@ const pillars = [
 ];
 
 const stats = [
-  { value: 500, suffix: "+", label: "Premium Journeys" },
-  { value: 50, suffix: "+", label: "Luxury Vehicles" },
+  { value: 27, suffix: "k+", label: "Premium Journeys" },
+  { value: 230, suffix: "+", label: "Luxury Vehicles" },
   { value: 10, suffix: "+", label: "Cities" },
 ];
 
